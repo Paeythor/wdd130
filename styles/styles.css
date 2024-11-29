@@ -14,11 +14,12 @@ h1 {
 }
 
 main img {
-    max-width: 100px;
+    width: 100px;
     height: 100px;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px grey;
+    max-width: 3.5em;
 }
 p {
     padding: 0;
