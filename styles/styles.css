@@ -18,13 +18,13 @@ img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px grey;
 }
 p {
     padding: 0;
 }
 aside {
-    width: 20em; 
+    width: 20rem; 
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2); /* why use rgba instead of hex here? */
     padding: 1rem;
