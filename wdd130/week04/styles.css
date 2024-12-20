@@ -1,0 +1,37 @@
+.flexbox-container {
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+
+.flexbox-item {
+	width: 203px; margin: 10px;
+	border: 3px solid #333;
+	background-color: ■#dfdfdf;
+
+}
+.flexbox-item-1 {
+	min-height: 100px;
+    flex-grow: 0;
+    align-self: flex-start;
+    order: 1;
+}
+.flexbox-item-2 {	
+    min-height: 200px;
+    flex-grow: .5;
+    flex-basis: 0;
+    align-self: center;
+    order: 2;
+}
+
+.flexbox-item-3 {	
+    min-height: 300px;
+    flex-grow: .5;
+    flex-basis: 0;
+    align-self: flex-end;
+    order: 3;
+}
