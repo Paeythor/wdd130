@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/provoweather.js"></script>
   </head>
   <body>
     <header>
@@ -80,18 +81,6 @@
       <p id="lastModified">Last Modified: <span id="lastModifiedDate"></span></p>
     </footer>
 
-    
-    <script>
-      !function(d,s,id){
-        var js,fjs = d.getElementsByTagName(s)[0];
-        if(!d.getElementById(id)){
-          js = d.createElement(s);
-          js.id = id;
-          js.src = 'https://weatherwidget.io/js/widget.min.js';
-          fjs.parentNode.insertBefore(js,fjs);
-        }
-      }(document,'script','weatherwidget-io-js');
-    </script>
 
     <script>
       document.getElementById('lastModifiedDate').textContent = document.lastModified;
