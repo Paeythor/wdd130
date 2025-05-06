@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 130">
+    <meta name="author" content="Jacob Schumann">
+    <title>WDD 130  - Jacob Schumann</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>WDD 130 - Web Fundamentals</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="https://byupw.instructure.com/courses/13807/" title="WDD130">WDD 130</a></li>
+          <li><a href="about.html">Mountain Home</a></li>
+          <li><a href="wwr/">White Water Rafting Website</a></li>
+          <li><a href="wwr/site-plan-rafting.html">White Water Rafting Siteplan</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      
+      <div class="left-column">
+        <section class="card-1">
+          <h2 class="about-me-title">About Me</h2>
+          <div class="about-me-container">
+            <div class="about-me-text">
+              <p>
+                My name is Jacob Schumann, and I am from Pleasant Hill, CA originally but now have lived just over half my life in Provo, Utah. I have always had a passion for technology, creative writing, and web development. I am currently pursuing coding, digital marketing, and computer programming, hoping to develop my own business and potentially skills for another job. In my free time, I play with my dogs and work on creative endeavors.
+              </p>
+            </div>
+            <div class="about-me-image">
+              <img src="images/jacob_photo.jpg" alt="Jacob Schumann">
+            </div>
+          </div>
+        </section>
+
+        <section class="card-2">
+          <h2 class="provo-title">Provo, Utah</h2>
+          <div class="provo-container">
+            <div class="provo-text">
+              <p>
+                Provo is a city in Utah, located about 45 minutes south of Salt Lake City. It is known for being the beautiful home of Brigham Young University and is surrounded by scenic mountains. Provo has a strong tech scene, making it an ideal location for those pursuing careers in technology and innovation.
+              </p>
+            </div>
+            <div class="provo-image">
+              <img src="images/ymountain.jpg" alt="Y Mountain">
+            </div>
+          </div>
+        </section>
+      </div>
+
+      
+      <div class="right-column">
+        <section class="card-3">
+          <h2 class="weather-title">Weather</h2>
+          <div class="weather-container">
+            <a class="weatherwidget-io" 
+               href="https://forecast7.com/en/40d23n111d66/provo/" 
+               data-label_1="PROVO" 
+               data-label_2="WEATHER" 
+               data-theme="original">
+               PROVO WEATHER
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear">2025</span> 🗡️ Jacob Schumann 🗡️ Provo, UT</p>
+      <p id="lastModified">Last Modified: <span id="lastModifiedDate"></span></p>
+    </footer>
+
+    
+    <script>
+      !function(d,s,id){
+        var js,fjs = d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+          js = d.createElement(s);
+          js.id = id;
+          js.src = 'https://weatherwidget.io/js/widget.min.js';
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,'script','weatherwidget-io-js');
+    </script>
+
+    <script>
+      document.getElementById('lastModifiedDate').textContent = document.lastModified;
+    </script>
+  </body>
+</html>
