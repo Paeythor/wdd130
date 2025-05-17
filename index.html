@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 130">
+    <meta name="description" content="Jacob Schumann's WDD 130 course homepage showcasing web development skills and projects.">
     <meta name="author" content="Jacob Schumann">
-    <title>WDD 130  - Jacob Schumann</title>
+    <title>WDD 130 - Jacob Schumann</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/provoweather.js"></script>
+    <script defer src="scripts/slideshow.js"></script>
   </head>
   <body>
     <header>
@@ -28,7 +29,6 @@
     </header>
 
     <main>
-      
       <div class="left-column">
         <section class="card-1">
           <h2 class="about-me-title">About Me</h2>
@@ -57,9 +57,20 @@
             </div>
           </div>
         </section>
+
+        <section class="card-4">
+          <h2 class="provo-title">Utah</h2>
+          <div class="provo-container">
+            <div class="provo-text">
+              <p>
+                Utah is a state in the western United States. It is bordered by Colorado to the east, Wyoming to the northeast, Idaho to the north, Arizona to the south, and Nevada to the west. It also touches a corner of New Mexico in the southeast. The state is a center of transportation, education, information technology, and research, and a major tourist destination for outdoor recreation. Salt Lake City, the state capital and largest city, is home to the headquarters of The Church of Jesus Christ of Latter-day Saints (LDS Church).
+              </p>
+              <img id="slideshow" src="images/utahlandscapes/arches-utah-fact.jpg" alt="Utah slideshow">
+            </div>
+          </div>
+        </section>
       </div>
 
-      
       <div class="right-column">
         <section class="card-3">
           <h2 class="weather-title">Weather</h2>
@@ -80,10 +91,5 @@
       <p>&copy; <span id="currentyear">2025</span> 🗡️ Jacob Schumann 🗡️ Provo, UT</p>
       <p id="lastModified">Last Modified: <span id="lastModifiedDate"></span></p>
     </footer>
-
-
-    <script>
-      document.getElementById('lastModifiedDate').textContent = document.lastModified;
-    </script>
   </body>
 </html>
