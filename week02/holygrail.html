@@ -6,36 +6,51 @@
     <title>Jacob Schumann | Holy Grail Layout Example</title>
     <meta name="description" content="A common layout on the web called the 'holy grail'">
     <meta name="author" content="Jacob Schumann">
+    <link rel="stylesheet" href="week02/styles/holygrail.css">
   </head>
   <body>
-    <header>
+    <header role="banner">
       <h1>A Holy Grail Layout Example</h1>
     </header>
 
-    <nav>
+    <nav role="navigation">
       <ul>
         <li><a href="https://byui.edu">BYU-Idaho</a></li>
         <li><a href="https://churchofjesuschrist.org">The Church</a></li>
       </ul>
     </nav>
 
-    <main>
+    <main role="main">
       <section>
-        <h2>Heading</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tenetur molestias recusandae, vero distinctio officia doloremque ea, reiciendis aliquam. Quos temporibus quisquam error id!</p>
+        <h2>Block vs Inline Elements</h2>
+        <p>In this example, we will show the difference between block-level and inline elements.</p>
+        
+        <h3>Block-level Example</h3>
+        <div class="block-element">
+          <p>This is a block-level element (e.g., <code>&lt;div&gt;</code>). It takes up the full width and starts on a new line.</p>
+          <p>Another block-level element (e.g., <code>&lt;p&gt;</code>) also starts on a new line and occupies the full width.</p>
+        </div>
+
+        <h3>Inline Example</h3>
+        <p>Here is an inline element: <span style="color: red;">This text is inside a <code>&lt;span&gt;</code> element, which does not start on a new line.</span> Notice how the text continues inline without starting a new line.</p>
+
+        <p>Now, look at the <a href="https://byui.edu" target="_blank">link</a> in the paragraph. This is also an inline element because it does not break the line.</p>
       </section>
+
       <section>
-        <h2>Heading</h2>
+        <h2>Additional Section Example</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tenetur molestias recusandae, vero distinctio officia doloremque ea, reiciendis aliquam. Quos temporibus quisquam error id!</p>
       </section>
     </main>
 
-    <aside>
+    <aside role="complementary">
       <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/800x500/payson-utah-temple-celestial-room-1458545.jpg" alt="Payson Utah Temple Celestial Room" width="200">
     </aside>
 
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; <span id="currentyear">2025</span> 🗡️ Jacob Schumann 🗡️ Provo, UT</p>
     </footer>
+
+    <script src="week02/scripts/holygrail.js"></script>
   </body>
 </html>

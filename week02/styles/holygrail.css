@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+html {
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+nav {
+  background-color: #00008B;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 20px;
+}
+
+nav a:hover {
+  background-color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+div {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+span {
+  color: red;
+}
+
+a {
+  color: blue;
+}
+
+img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 0 30px gray;
+  border: 5px solid black;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+}
