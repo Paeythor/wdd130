@@ -53,6 +53,9 @@ nav a {
 nav a:hover {
   color: #f4b400;
 }
+main {
+  max-width: 840px;
+}
 
 .main-container {
   display: flex;
