@@ -74,14 +74,18 @@ main.main-layout {
 
 aside {
   flex: 0 1 35%; 
-  max-width: 35%;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  max-width: 20rem;
   min-width: 300px;
   background-color: #003366;
   color: #C0C0C0;
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 0px 4px 8px #000000;
+  text-align: center;
 }
+
 
 
 aside img {
