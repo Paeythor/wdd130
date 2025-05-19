@@ -1,3 +1,4 @@
+/* ========== Global Reset & Base ========== */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,33 @@ body {
   text-shadow: 3px 3px 5px #000000;
 }
 
+p {
+  padding: 0;
+}
+
+/* ========== Typography ========== */
+h1 {
+  margin: 0;
+}
+
+.about-me-title,
+.provo-title,
+.weather-title {
+  background-color: #000080;
+  color: #C0C0C0;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.weather-title {
+  font-size: 1.8rem;
+}
+
+/* ========== Header & Navigation ========== */
 header {
   background-color: #00008B;
   color: #C0C0C0;
@@ -26,10 +54,6 @@ nav {
   border-radius: 10px;
   box-shadow: 0px 4px 8px #000000;
   margin-bottom: 1rem;
-}
-
-h1 {
-  margin: 0;
 }
 
 nav ul {
@@ -53,6 +77,7 @@ nav a:hover {
   color: #f4b400;
 }
 
+/* ========== Layout ========== */
 main {
   max-width: 840px;
   margin: 2rem auto;
@@ -62,41 +87,53 @@ main {
   gap: 2rem;
 }
 
-.card {
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.right-column {
   background-color: #003366;
   color: #C0C0C0;
   padding: 1rem;
-  text-align: center;
   border-radius: 15px;
   box-shadow: 0px 4px 8px #000000;
+}
+
+/* ========== Content Cards ========== */
+.card,
+.card-3 {
+  background-color: #003d3d;
+  color: #C0C0C0;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px #000000;
+  text-align: center;
   border: 3px solid #000000;
 }
 
-.card img {
-  max-width: 100%;
+.card img,
+.about-me-image img,
+.provo-image img,
+.utah-slideshow img,
+aside img,
+main img {
+  width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-.card p {
-  font-size: 1rem;
-  color: #C0C0C0;
-}
-
-footer {
-  background-color: #333333;
-  color: #C0C0C0;
-  padding: 1rem;
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
   box-shadow: 0px 4px 8px #000000;
 }
 
-footer p {
-  margin: 0.5rem 0;
+main img {
+  width: 150px;
 }
 
+aside img {
+  width: 200px;
+}
+
+/* ========== Sections ========== */
 .about-me-container,
 .provo-container,
 .utah-container {
@@ -126,42 +163,23 @@ footer p {
   max-width: 40%;
 }
 
-.about-me-image img,
-.provo-image img,
-.utah-slideshow img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.about-me-title,
-.provo-title,
-.Provo-Weather {
-  background-color: #000080;
-  color: #C0C0C0;
-  padding: 10px;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px #000000;
-}
-
-.weather-container,
-.weather-container ul {
-  flex: 1;
-  background-color: #003366;
+/* ========== Weather Widget ========== */
+.weather-container {
+  background-color: #003d3d;
   color: #C0C0C0;
   padding: 1rem;
   text-align: center;
   border-radius: 15px;
   box-shadow: 0px 4px 8px #E0E0E0;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 .weather-container a {
   color: #C0C0C0;
   text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -169,10 +187,11 @@ footer p {
   color: #f4b400;
 }
 
+/* ========== Aside ========== */
 aside {
   width: 100%;
   max-width: 20rem;
-  margin: 1rem;
+  margin: 1rem auto;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
   background-color: #eee;
@@ -180,208 +199,42 @@ aside {
   text-align: center;
 }
 
-aside img {
-  width: 200px;
-  height: auto;
-}
-
-main img {
-  width: 150px;
-  height: auto;
-}
-
-p {
-  padding: 0;
-}
-
-
-
-.utah-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #003366;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px #E0E0E0;
-  margin-bottom: 20px;
-}
-
-.utah-text {
-  flex: 1;
-  min-width: 300px;
-  margin-right: 1rem;
+/* ========== Footer ========== */
+footer {
+  background-color: #333333;
   color: #C0C0C0;
-}
-
-.utah-slideshow {
-  flex: 1;
-  max-width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.utah-slideshow img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px #000000;
-}
-.right-column {
-  background-color: #003366; 
-  color: #C0C0C0; 
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px #000000;
-  position: relative;
-  margin-left: auto;
-  margin-top: 0;
-}
-
-.card-3 {
-  background-color: #003d3d; 
-  color: #C0C0C0; 
   padding: 1rem;
-  border-radius: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
   box-shadow: 0px 4px 8px #000000;
 }
 
-.weather-title {
-  background-color: #000080; 
-  color: #C0C0C0; 
-  padding: 10px;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px #000000;
+footer p {
+  margin: 0.5rem 0;
 }
 
-.weather-container {
-  background-color: #003d3d; /* Same as the background */
-  padding: 1rem;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px #E0E0E0;
-  margin-top: 1rem;
-}
-
-.weather-container a {
-  color: #C0C0C0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.weather-container a:hover {
-  color: #f4b400; 
-}
-
-
+/* ========== Responsive ========== */
 @media screen and (min-width: 1024px) {
   .right-column {
     width: 300px;
     position: fixed;
-    top: 100px; 
+    top: 100px;
     right: 0;
     padding: 20px;
-    z-index: 1000; 
+    z-index: 1000;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .main-layout,
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
   .right-column {
     position: relative;
     width: 100%;
     margin-top: 20px;
-  }
-}
-.content-wrapper {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 2rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .content-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-.main-layout {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  align-items: start;
-}
-
-.left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.right-column {
-  background-color: #003366;
-  color: #C0C0C0;
-  padding: 1rem;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px #000000;
-}
-
-.card-3 {
-  background-color: #003d3d;
-  padding: 1rem;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px #000000;
-}
-
-.weather-title {
-  background-color: #000080;
-  color: #C0C0C0;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px #000000;
-}
-
-.weather-container {
-  background-color: #003d3d;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px #E0E0E0;
-  margin-top: 1rem;
-}
-
-.weather-container a {
-  color: #C0C0C0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.weather-container a:hover {
-  color: #f4b400;
-}
-
-@media screen and (max-width: 1024px) {
-  .main-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .right-column {
-    margin-top: 2rem;
   }
 }
