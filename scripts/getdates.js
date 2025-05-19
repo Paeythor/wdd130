@@ -1,4 +1,4 @@
-<script>
+
   const currentYear = new Date().getFullYear();
   document.getElementById('currentyear').textContent = currentYear;
 
@@ -23,4 +23,3 @@
   }
 
   setInterval(changeImage, 3000);
-</script>
