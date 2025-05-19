@@ -23,7 +23,7 @@ h1 {
 }
 
 .about-me-title,
-.provo-title,
+.utah-title,
 .weather-title {
   background-color: #000080;
   color: #C0C0C0;
@@ -135,7 +135,6 @@ aside img {
 
 /* ========== Sections ========== */
 .about-me-container,
-.provo-container,
 .utah-container {
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +148,6 @@ aside img {
 }
 
 .about-me-text,
-.provo-text,
 .utah-text {
   flex: 1;
   max-width: 50%;
@@ -166,3 +164,4 @@ aside img {
 /* ========== Weather Widget ========== */
 .weather-container {
   background-color:
+}
