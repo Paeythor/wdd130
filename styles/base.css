@@ -76,7 +76,7 @@ nav a:hover {
   padding: 2rem;
   display: flex;
   gap: 2rem;
-  
+  flex-wrap: wrap;
 }
 
 main.main-layout {
@@ -100,6 +100,11 @@ main.main-layout {
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 0px 4px 8px #000000;
+}
+
+.right-column img {
+  max-width: 100%;
+  height: auto;
 }
 
 .card,
@@ -183,16 +188,21 @@ footer {
   overflow: hidden;
   position: relative;
 }
+
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
-    gap: 0;
   }
+
   main.main-layout,
   .right-column {
     max-width: 100%;
     flex: 1 1 100%;
     min-width: 0;
     margin-left: 0;
+  }
+
+  .left-column {
+    width: 100%;
   }
 }
