@@ -6,15 +6,11 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   background-color: #003d3d;
   color: #C0C0C0;
   text-shadow: 3px 3px 5px #000000;
-}
-
-p {
-  padding: 0;
 }
 
 /* ========== Typography ========== */
@@ -36,7 +32,7 @@ h1 {
 }
 
 .weather-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 /* ========== Header & Navigation ========== */
@@ -79,21 +75,26 @@ nav a:hover {
 
 /* ========== Layout ========== */
 main {
-  max-width: 840px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
   margin: 2rem auto;
   padding: 2rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
 }
 
 .left-column {
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .right-column {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
   background-color: #003366;
   color: #C0C0C0;
   padding: 1rem;
@@ -103,8 +104,8 @@ main {
 
 /* ========== Content Cards ========== */
 .card,
-.card-3 {
-  background-color: #003d3d;
+.card-1 {
+  background-color: #003366;
   color: #C0C0C0;
   padding: 1rem;
   border-radius: 15px;
@@ -113,55 +114,63 @@ main {
   border: 3px solid #000000;
 }
 
-.card img,
-.about-me-image img,
-.provo-image img,
-.utah-slideshow img,
-aside img,
-main img {
+/* ========== Images ========== */
+img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0px 4px 8px #000000;
 }
 
-main img {
-  width: 150px;
-}
-
-aside img {
-  width: 200px;
-}
-
 /* ========== Sections ========== */
 .about-me-container,
-.utah-container {
+.provo-container,
+.weather-container {
+  background-color: #003366;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+.about-me-container,
+.provo-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 1rem;
   align-items: center;
-  background-color: #003366;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px #E0E0E0;
-  margin-bottom: 20px;
 }
 
 .about-me-text,
-.utah-text {
+.provo-text {
   flex: 1;
-  max-width: 50%;
-  color: #C0C0C0;
+  min-width: 200px;
 }
 
 .about-me-image,
-.provo-image,
-.utah-slideshow {
+.provo-image {
   flex: 1;
-  max-width: 40%;
+  min-width: 200px;
 }
 
-/* ========== Weather Widget ========== */
-.weather-container {
-  background-color:
+/* Weather Widget Fix */
+.weather-container a.weatherwidget-io {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #C0C0C0;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  background-color: #000066;
+  color: #C0C0C0;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0px -4px 8px #000000;
 }
