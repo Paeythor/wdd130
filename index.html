@@ -27,22 +27,26 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <div class="left-column">
-        <section class="card-1">
-          <h2 class="about-me-title">About Me</h2>
-          <div class="about-me-container">
-            <div class="about-me-text">
-              <p>
+    <div class="main-layout">
+      <main class="main-container">
+        <div class="left-column">
+          <section class="card-1">
+            <h2 class="about-me-title">About Me</h2>
+            <div class="about-me-container">
+              <div class="about-me-text">
+                <p>
                 My name is Jacob Schumann, and I am from Pleasant Hill, CA originally but now have lived just over half my life in Provo, Utah. I have always had a passion for technology, creative writing, and web development. I am currently pursuing coding, digital marketing, and computer programming, hoping to develop my own business and potentially skills for another job. In my free time, I play with my dogs and work on creative endeavors.
-              </p>
+                </p>
+              </div>
+              <div class="about-me-image">
+                <img src="images/profile.jpg" alt="Jacob Schumann">
+              </div>
             </div>
-            <div class="about-me-image">
-              <img src="images/profile.jpg" alt="Jacob Schumann">
-            </div>
-          </div>
-        </section>
-      </div>
+          </section>
+        </div>
+      </main>
+      
+
       <aside class="right-column">
         <section class="utah">
           <h2 class="utah-title">Utah</h2>
@@ -66,11 +70,13 @@
           </div>
         </section>
       </aside>
-    </main>
-    <footer>
+    </div>
+      
+  <footer>
       <p>&copy; <span id="currentyear">2025</span> 🗡️ Jacob Schumann 🗡️ Provo, UT</p>
       <p id="lastModified">Last Modified: <span id="lastModifiedDate"></span></p>
-    </footer>
+  </footer>
+
     <script defer src="scripts/provoweather.js"></script>
     <script defer src="scripts/getdates.js"></script>
   </body>
