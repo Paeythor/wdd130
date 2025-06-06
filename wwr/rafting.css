@@ -3,6 +3,8 @@
   --secondary-color: #bd5a20;
   --accent1-color: #0e13ac;
   --accent2-color: #1ebec9;
+  --heading-font: "Georgia", serif;
+  --body-font: "Roboto", sans-serif;
   --off-white: #f5f2f7;
   --darkblue: rgba(19, 46, 59, 0.9);
   --lightblue: rgb(24, 74, 94);
@@ -25,7 +27,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--body-font);
   font-weight: 400;
   color: rgb(39, 86, 109);
   font-size: 1rem;
@@ -39,23 +41,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, serif;
-  font-weight: 400;
+  font-family: var(--heading-font);
+  font-weight: 700;
   color: var(--darkblue);
   text-align: left;
   margin-bottom: 0.5rem;
-}
-
-h1, h2 {
-  font-weight: 700;
-}
-
-h1.black {
-  font-weight: 900;
-}
-
-strong, b {
-  font-weight: 700;
 }
 
 header {
@@ -117,7 +107,7 @@ nav ul li a:hover {
   font-size: 1.5rem;
   border-radius: 8px;
   max-width: 80%;
-  font-family: Georgia, serif;
+  font-family: var(--heading-font);
   font-weight: 700;
   box-shadow: 0 0 15px var(--boxshadow);
 }
@@ -142,7 +132,6 @@ nav ul li a:hover {
   flex-shrink: 0;
   margin-right: 2rem;
   float: left;
-  shape-outside: inset(0 0 0 0);
 }
 
 .company-info p {
@@ -188,7 +177,7 @@ nav ul li a:hover {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .grid-item img {
@@ -206,12 +195,12 @@ nav ul li a:hover {
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   color: var(--off-white);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: Georgia, serif;
+  font-family: var(--heading-font);
   font-weight: 700;
 }
 
