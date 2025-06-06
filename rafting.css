@@ -1,12 +1,8 @@
-
-
 :root {
   --primary-color: #6f1212;
   --secondary-color: #bd5a20;
   --accent1-color: #0e13ac;
   --accent2-color: #1ebec9;
-  --heading-font: "Merriweather Sans", sans-serif;
-  --body-font: "Lato", sans-serif;
   --off-white: #f5f2f7;
   --darkblue: rgba(19, 46, 59, 0.9);
   --lightblue: rgb(24, 74, 94);
@@ -15,7 +11,6 @@
   --darkgray: rgb(82, 82, 82);
   --lightgray: rgba(150, 150, 150, 0.9);
   --boxshadow: rgba(0, 0, 0, 0.9);
- 
 }
 
 * {
@@ -43,15 +38,25 @@ body {
   padding: 0 1rem;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   font-family: Georgia, serif;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--darkblue);
   text-align: left;
   margin-bottom: 0.5rem;
 }
 
+h1, h2 {
+  font-weight: 700;
+}
+
+h1.black {
+  font-weight: 900;
+}
+
+strong, b {
+  font-weight: 700;
+}
 
 header {
   display: flex;
@@ -84,10 +89,9 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
   border-color: var(--gold);
-  color: var(--crimson);
+  color: var(--primary-color);
 }
 
-/* Hero */
 .hero {
   position: relative;
   margin: 2rem 0;
@@ -118,7 +122,6 @@ nav ul li a:hover {
   box-shadow: 0 0 15px var(--boxshadow);
 }
 
-
 .company-info {
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +151,6 @@ nav ul li a:hover {
   line-height: 1.6;
 }
 
-
 .history {
   margin-bottom: 3rem;
 }
@@ -165,7 +167,6 @@ nav ul li a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 #adventure-gallery {
   margin-bottom: 3rem;
@@ -214,7 +215,6 @@ nav ul li a:hover {
   font-weight: 700;
 }
 
-
 #join-the-fun {
   text-align: center;
   margin-bottom: 3rem;
@@ -230,7 +230,6 @@ nav ul li a:hover {
   color: var(--gold);
   text-decoration: underline;
 }
-
 
 footer {
   border-top: 1px solid var(--accent2-color);
@@ -276,10 +275,10 @@ h1 {
 }
 
 .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .hero {
   position: relative;
