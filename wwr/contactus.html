@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Mountain Home Whitewater Rafting</title>
+  <meta name="description" content="Learn more about Mountain Home Whitewater Rafting: our mission, history, and team.">
+  <meta name="author" content="Jacob Schumann">
+  <link rel="stylesheet" href="styles/contactus.css">
+</head>
+<body>
+  <header>
+    <div class="logo-box">
+      <img src="images/mountainhome.png" alt="Mountain Home Whitewater Rafting Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contactus.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact-section">
+      <h1>Contact Us</h1>
+      <p>If you have any questions or want to book your rafting adventure, please fill out the form below or reach out to us by phone or email.</p>
+
+      <form action="#" method="post" id="contact-form">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your full name">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Optional">
+
+          <label for="trip-type">Type of Trip Interested In:</label>
+          <select id="trip-type" name="trip-type" required>
+            <option value="">--Please choose an option--</option>
+            <option value="family">Family-Friendly Trip</option>
+            <option value="adventure">Adventure/Advanced Trip</option>
+            <option value="private">Private Guide Trip</option>
+            <option value="group">Group Trip</option>
+          </select>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your questions or comments here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;2024 | Mountain Home Whitewater Rafting, Jacob Schumann | Utah, USA</p>
+    <div class="social-logos">
+      <a href="https://www.facebook.com" target="_blank" class="icon" id="facebook">
+        <img src="images/facebook_logo.webp" alt="Facebook logo">
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="icon" id="instagram">
+        <img src="images/instagram_logo.webp" alt="Instagram logo">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" class="icon" id="linkedin">
+        <img src="images/linkedin_logo.webp" alt="LinkedIn logo">
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
