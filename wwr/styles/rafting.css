@@ -6,8 +6,6 @@
   --darkblue: #132e3b;
   --white: #ffffff;
   --gold: #b37d00;
-  --darkgray: #dcdcdc;
-  --lightgray: rgba(150, 150, 150, 0.9);
   --boxshadow: rgba(0, 0, 0, 0.9);
 }
 
@@ -25,7 +23,7 @@ html {
 body {
   font-family: var(--body-font);
   font-weight: 400;
-  color: #ffffff !important; 
+  color: var(--white);
   font-size: 1rem;
   background-color: var(--secondary-color);
   max-width: 900px;
@@ -43,7 +41,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   font-weight: 400;
-  color: var(--darkblue);
+  color: var(--white);
   text-align: left;
   margin-bottom: 0.5rem;
 }
@@ -80,9 +78,8 @@ nav ul {
   padding: 0;
 }
 
-
 nav ul li a {
-  color: var(--darkblue);
+  color: var(--white);
   text-decoration: none;
   font-size: 1rem;
   padding-bottom: 4px;
@@ -107,7 +104,10 @@ nav ul li a:hover {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: -1;
   border-radius: 12px;
@@ -126,7 +126,7 @@ nav ul li a:hover {
   position: absolute;
   bottom: 15%;
   left: 5%;
-  color: #ffffff !important;
+  color: var(--white);
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem 2rem;
   font-size: 2rem;
@@ -173,7 +173,7 @@ nav ul li a:hover {
 
 .company-info p {
   font-size: 1.1rem;
-  color: var(--darkblue);
+  color: var(--white);
   line-height: 1.6;
 }
 
@@ -188,7 +188,7 @@ nav ul li a:hover {
 .history p {
   font-size: 1.2rem;
   line-height: 1.6;
-  color: var(--darkblue);
+  color: var(--white);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -200,7 +200,7 @@ nav ul li a:hover {
 
 #adventure-gallery h2 {
   text-align: center;
-  color: var(--darkblue);
+  color: var(--white);
   margin-bottom: 2rem;
 }
 
@@ -214,7 +214,7 @@ nav ul li a:hover {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .grid-item img {
@@ -232,8 +232,8 @@ nav ul li a:hover {
   position: absolute;
   bottom: 0.5rem;
   left: 0.5rem;
-  background-color: rgba(0,0,0,0.6);
-  color: var(--off-white);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -248,7 +248,7 @@ nav ul li a:hover {
 
 #join-the-fun h1 {
   font-size: 1.5rem;
-  color: var(--darkblue);
+  color: var(--white);
   font-weight: 700;
 }
 
@@ -283,47 +283,11 @@ footer p {
   width: 30px;
   height: 30px;
   transition: transform 0.2s ease;
-  filter: brightness(0) invert(1); /* Ensures icons are visible on dark bg */
+  filter: brightness(0) invert(1);
 }
 
 .social-logos a img:hover {
   transform: scale(1.1);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  font-weight: 400;
-  color: var(--white); /* Changed to white */
-  text-align: left;
-  margin-bottom: 0.5rem;
-}
-
-.company-info p {
-  font-size: 1.1rem;
-  color: var(--white); /* Changed to white */
-  line-height: 1.6;
-}
-
-.history p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: var(--white); /* Changed to white */
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.caption {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 0.5rem;
-  background-color: rgba(0,0,0,0.6);
-  color: var(--white); /* Changed to white */
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: var(--heading-font);
-  font-weight: 700;
 }
 
 @media (max-width: 600px) {
