@@ -566,3 +566,41 @@ footer p {
   margin-right: auto;
   justify-content: center;
 }
+.spreadsheet-style table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--body-font);
+  margin-top: 1rem;
+  background-color: var(--darkblue);
+  color: var(--off-white);
+  box-shadow: 0 0 15px var(--boxshadow);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.spreadsheet-style th,
+.spreadsheet-style td {
+  border: 1px solid var(--darkgray);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.spreadsheet-style th {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.spreadsheet-style tr:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+.spreadsheet-style tr:nth-child(odd) {
+  background-color: var(--darkblue);
+}
+
+.spreadsheet-style tr:hover {
+  background-color: var(--accent2-color);
+  color: var(--white);
+}
