@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact - Mountain Home Whitewater Rafting</title>
   <meta name="description" content="Contact Mountain Home Whitewater Rafting in Provo, Utah for rafting trips, questions, and more.">
   <meta name="author" content="Jacob Schumann">
@@ -20,35 +20,37 @@
       <img src="images/mountainhome.png" alt="Mountain Home Whitewater Rafting Logo">
     </div>
     <nav>
-      <ul>
+      <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html" class="active">Contact Us</a></li>
-
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="contact-section">
-      <h1>Contact Us</h1>
-      <p>If you have any questions or want to book your rafting adventure, please fill out the form or contact us directly!</p>
+    <section id="contact-section" class="contact-grid">
+      <div class="contact-info">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or want to book your rafting adventure, please fill out the form or contact us directly!</p>
 
-      <section id="location">
         <h2>Our Location</h2>
-        <p>456 River Bend Lane, Provo, UT 84604</p>
-        <p>Phone: (801) 555-7890 | Email: <a href="mailto:info@mountainhome.com">info@mountainhome.com</a></p>
+        <address>
+          456 River Bend Lane, Provo, UT 84604<br>
+          Phone: <a href="tel:+18015557890">(801) 555-7890</a><br>
+          Email: <a href="mailto:info@mountainhome.com">info@mountainhome.com</a>
+        </address>
+
         <div class="map-container">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.343269245506!2d-111.65852768459403!3d40.2338439793878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874dbb3ebf7d2c2d%3A0x8c2b06ea5a0e2f51!2sProvo%2C%20UT%2084604%2C%20USA!5e0!3m2!1sen!2sus!4v1718058373156!5m2!1sen!2sus" 
-    width="600" height="300" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.343269245506!2d-111.65852768459403!3d40.2338439793878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874dbb3ebf7d2c2d%3A0x8c2b06ea5a0e2f51!2sProvo%2C%20UT%2084604%2C%20USA!5e0!3m2!1sen!2sus!4v1718058373156!5m2!1sen!2sus" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
 
-      </section>
-
-      <form action="#" method="post" id="contact-form">
+      <form action="#" method="post" id="contact-form" class="contact-form">
         <fieldset>
           <legend>Contact Information</legend>
 
@@ -69,7 +71,7 @@
           <label for="message">Your Message:</label>
           <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
 
-          <label>
+          <label class="subscribe-label">
             <input type="checkbox" name="subscribe" value="yes"> Please subscribe me to the monthly newsletter
           </label>
 
@@ -80,34 +82,36 @@
 
     <section class="employee-profiles">
       <h2>Meet Our Team</h2>
-      <figure>
-        <img src="images/bekkah-jorgensen.png" alt="Bekkah - Lead Guide">
-        <figcaption>Bekkah - Lead Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/olga-jorgensen.png" alt="Olga - Trip Coordinator">
-        <figcaption>Olga - Trip Coordinator</figcaption>
-      </figure>
-      <figure>
-        <img src="images/katja-jorgensen.png" alt="Katja - Safety Expert">
-        <figcaption>Katja - Safety Expert</figcaption>
-      </figure>
-      <figure>
-        <img src="images/cody-bosen.png" alt="Support Staff">
-        <figcaption>Support Staff</figcaption>
-      </figure>
-      <figure>
-        <img src="images/efrain-puplampo.png" alt="Senior Guide">
-        <figcaption>Senior Guide</figcaption>
-      </figure>
-      <figure>
-        <img src="images/juan-gabriel.png" alt="Guide Trainee">
-        <figcaption>Guide Trainee</figcaption>
-      </figure>
-      <figure>
-        <img src="images/gilda-goldstein.png" alt="Customer Service">
-        <figcaption>Customer Service</figcaption>
-      </figure>
+      <div class="profiles-grid">
+        <figure>
+          <img src="images/bekkah-jorgensen.png" alt="Bekkah - Lead Guide">
+          <figcaption>Bekkah - Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/olga-jorgensen.png" alt="Olga - Trip Coordinator">
+          <figcaption>Olga - Trip Coordinator</figcaption>
+        </figure>
+        <figure>
+          <img src="images/katja-jorgensen.png" alt="Katja - Safety Expert">
+          <figcaption>Katja - Safety Expert</figcaption>
+        </figure>
+        <figure>
+          <img src="images/cody-bosen.png" alt="Support Staff">
+          <figcaption>Support Staff</figcaption>
+        </figure>
+        <figure>
+          <img src="images/efrain-puplampo.png" alt="Senior Guide">
+          <figcaption>Senior Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/juan-gabriel.png" alt="Guide Trainee">
+          <figcaption>Guide Trainee</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gilda-goldstein.png" alt="Customer Service">
+          <figcaption>Customer Service</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
